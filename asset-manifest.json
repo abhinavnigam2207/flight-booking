@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/flight-booking/static/css/main.5f361e03.chunk.css",
+    "main.js": "/flight-booking/static/js/main.c61d6037.chunk.js",
+    "main.js.map": "/flight-booking/static/js/main.c61d6037.chunk.js.map",
+    "runtime-main.js": "/flight-booking/static/js/runtime-main.8b08b8a0.js",
+    "runtime-main.js.map": "/flight-booking/static/js/runtime-main.8b08b8a0.js.map",
+    "static/js/2.ef1980d7.chunk.js": "/flight-booking/static/js/2.ef1980d7.chunk.js",
+    "static/js/2.ef1980d7.chunk.js.map": "/flight-booking/static/js/2.ef1980d7.chunk.js.map",
+    "index.html": "/flight-booking/index.html",
+    "precache-manifest.00853f86664b8d243d8c1a971608862a.js": "/flight-booking/precache-manifest.00853f86664b8d243d8c1a971608862a.js",
+    "service-worker.js": "/flight-booking/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/flight-booking/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.ef1980d7.chunk.js.LICENSE.txt": "/flight-booking/static/js/2.ef1980d7.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/flight-booking/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b08b8a0.js",
+    "static/js/2.ef1980d7.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.c61d6037.chunk.js"
+  ]
+}
