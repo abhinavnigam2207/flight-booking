@@ -55,7 +55,9 @@ export default ({searchAction}) => {
             autoComplete={false}
             openOnFocus={false}
             value={fromCity}
-            onChange={(option) => {setFromCity(option)}}
+            onChange={(event, newValue) => {
+              setFromCity(newValue);
+            }}
             getOptionLabel={(option) => option.title}
             renderInput={(params) => <TextField onMouseDownCapture={(e) => e.stopPropagation()} {...params} label="Enter Origin City" />}
           />
@@ -67,7 +69,9 @@ export default ({searchAction}) => {
             autoComplete={false}
             openOnFocus={false}
             value={toCity}
-            onChange={(option) => {setToCity(option)}}
+            onChange={(event, newValue) => {
+              setToCity(newValue);
+            }}
             getOptionLabel={(option) => option.title}
             renderInput={(params) => <TextField onMouseDownCapture={(e) => e.stopPropagation()} {...params} label="Enter Destination City" />}
           />
