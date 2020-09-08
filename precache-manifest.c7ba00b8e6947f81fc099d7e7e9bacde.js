@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0eb83b4b7cc5ca6383b9df9d4c4a64a6",
+    "revision": "c8741200b5b458d1bf4856a81acea7fb",
     "url": "/flight-booking/index.html"
   },
   {
-    "revision": "08a19712b4ffa5f289d1",
+    "revision": "2233cd61f22f0e752397",
     "url": "/flight-booking/static/css/main.2c15c1b7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flight-booking/static/js/2.e1c43caa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "08a19712b4ffa5f289d1",
-    "url": "/flight-booking/static/js/main.0bd8b6cc.chunk.js"
+    "revision": "2233cd61f22f0e752397",
+    "url": "/flight-booking/static/js/main.e62bc419.chunk.js"
   },
   {
     "revision": "c0f3b0b91822cf47b5e3",
