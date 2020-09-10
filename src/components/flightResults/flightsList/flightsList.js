@@ -1,43 +1,16 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
-import { useState } from 'react';
-import Button from '@material-ui/core/Button';
-import flightIcon from '../../../static/images/flight.png';
+import { Fragment } from 'react';
+
 import moment from 'moment';
+import FlightListItem from '../flightListItem';
 
 const flex1 = css`flex: 1;`;
-const flightRow = css`
-  display: flex;
-  padding: 0 5px;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 15px 5px;
-`;
-const flightImg = css`
-  height: 35px;
-  width: 35px;
-`;
 const noFlightsMsg = css`
   text-align: center;
   margin: 30% 20%;
   font-size: 1em;
   font-family: cursive;
-`;
-const head = css`
-  font-weight: 600;
-  font-size: 14px;
-`;
-const subHead = css`
-  color: darkgray;
-  font-size: 12px;
-`;
-const red = css`color: #e93535;`;
-const btn = css`
-  background: #e93535 !important;
-  color: white !important;
 `;
 const headCSS = css`
   background: aliceblue;
@@ -64,27 +37,12 @@ export default ({ returnFlight, filter, flights }) => {
       </header>
       <div>
         {flights.map((flight) => (
-          <div css={flightRow}>
-            <div><img css={flightImg} src={flightIcon} /></div>
-            <div>
-              <div css={head}>{flight.name}</div>
-              <div css={subHead}>{flight.flightNo}</div>
-            </div>
-            <div>
-              <div css={head}>{flight.departureTime}</div>
-              <div css={subHead}>{flight.origin.split('(')[0]}</div>
-            </div>
-            <div>
-              <div css={head}>{flight.arrivalTime}</div>
-              <div css={subHead}>{flight.destination.split('(')[0]}</div>
-            </div>
-            <div>
-              <div css={head}>{`${flight.duration} hours`}</div>
-              {flight.multiple ? (<div css={subHead}>Total Duration</div>) : (<div css={subHead}>Non Stop</div>)}
-            </div>
-            <div css={[head, red]}>{`Rs ${flight.price}`}</div>
-            <Button css={btn} onClick={()=> {}}>Book</Button>
-          </div>
+          <Fragment>
+            <FlightListItem flight={flight}/>
+            {/* {flight.multiple
+              ?  (<FlightListItem flight={flight.multiple}/>)
+              : (<FlightListItem flight={flight}/>)} */}
+          </Fragment>
         ))}
       </div>
     </div>
