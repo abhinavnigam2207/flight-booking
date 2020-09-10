@@ -1,7 +1,3 @@
-export const endPoints = {
-  production: '/'
-};
-
 const errorObject = async (res) => {
   const body = await res.json();
   const error = new Error(body.errorMessage || body.error || body);
@@ -17,13 +13,5 @@ export const validateResponse = async (resp) => {
   return {
     headers: resp.headers,
     data: await resp.json()
-  };
-};
-
-export const validateTextResponse = async (resp) => {
-  if (!resp.ok) return errorObject(resp);
-  return {
-    headers: resp.headers,
-    data: await resp.text()
   };
 };

@@ -17,6 +17,7 @@ const right = css`border-left: 0px; border-radius: 0px 5px 0px 0px !important;`;
 const btn = css`
   width: 35%;
   border: 1px solid lightgray !important;
+  @media (min-width: 768px) { width: 40%;}
   :disabled{
     background: #2196F3;
     color: white !important;
@@ -30,7 +31,7 @@ const formBox = css`
 const formControlStyle = css`margin: 10px 0px;`;
 
 export default ({searchAction}) => {
-  const [isTwoWay, setIsTwoWay] = useState(true);
+  const [isTwoWay, setIsTwoWay] = useState(false);
   const [fromCity, setFromCity] = useState(null);
   const [toCity, setToCity] = useState(null);
   const [departureDate, setDepartureDate] = useState(new Date());
@@ -38,9 +39,7 @@ export default ({searchAction}) => {
   const [passengers, setPassengers] = useState(1);
 
   const search = () => {
-    searchAction({
-      departureDate, returnDate, passengers, fromCity, toCity
-    });
+    searchAction({ departureDate, returnDate, passengers, fromCity, toCity, isTwoWay });
   };
 
   return (
@@ -89,7 +88,7 @@ export default ({searchAction}) => {
               disablePast
               autoOk
               onChange={(date) => { setDepartureDate(date);}}
-              KeyboardButtonProps={{ 'aria-label': 'change Departure Date' }}
+              keyboardbuttonprops={{ 'aria-label': 'change Departure Date' }}
             />
           </div>
           {isTwoWay && <div css={formControlStyle}>
@@ -104,7 +103,7 @@ export default ({searchAction}) => {
               disablePast
               autoOk
               onChange={(date) => { setReturnDate(date);}}
-              KeyboardButtonProps={{ 'aria-label': 'change Return Date' }}
+              keyboardbuttonprops={{ 'aria-label': 'change Return Date' }}
             />
           </div>}
         </MuiPickersUtilsProvider>
