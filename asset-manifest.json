@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/flight-booking/static/css/main.2c15c1b7.chunk.css",
-    "main.js": "/flight-booking/static/js/main.e62bc419.chunk.js",
-    "main.js.map": "/flight-booking/static/js/main.e62bc419.chunk.js.map",
+    "main.js": "/flight-booking/static/js/main.ab6cb459.chunk.js",
+    "main.js.map": "/flight-booking/static/js/main.ab6cb459.chunk.js.map",
     "runtime-main.js": "/flight-booking/static/js/runtime-main.8b08b8a0.js",
     "runtime-main.js.map": "/flight-booking/static/js/runtime-main.8b08b8a0.js.map",
-    "static/js/2.e1c43caa.chunk.js": "/flight-booking/static/js/2.e1c43caa.chunk.js",
-    "static/js/2.e1c43caa.chunk.js.map": "/flight-booking/static/js/2.e1c43caa.chunk.js.map",
+    "static/js/2.dea11702.chunk.js": "/flight-booking/static/js/2.dea11702.chunk.js",
+    "static/js/2.dea11702.chunk.js.map": "/flight-booking/static/js/2.dea11702.chunk.js.map",
     "index.html": "/flight-booking/index.html",
-    "precache-manifest.c7ba00b8e6947f81fc099d7e7e9bacde.js": "/flight-booking/precache-manifest.c7ba00b8e6947f81fc099d7e7e9bacde.js",
+    "precache-manifest.e82b31530e26f090c73c03d84498004e.js": "/flight-booking/precache-manifest.e82b31530e26f090c73c03d84498004e.js",
     "service-worker.js": "/flight-booking/service-worker.js",
     "static/css/main.2c15c1b7.chunk.css.map": "/flight-booking/static/css/main.2c15c1b7.chunk.css.map",
-    "static/js/2.e1c43caa.chunk.js.LICENSE.txt": "/flight-booking/static/js/2.e1c43caa.chunk.js.LICENSE.txt"
+    "static/js/2.dea11702.chunk.js.LICENSE.txt": "/flight-booking/static/js/2.dea11702.chunk.js.LICENSE.txt",
+    "static/media/loader.gif": "/flight-booking/static/media/loader.86363db3.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.8b08b8a0.js",
-    "static/js/2.e1c43caa.chunk.js",
+    "static/js/2.dea11702.chunk.js",
     "static/css/main.2c15c1b7.chunk.css",
-    "static/js/main.e62bc419.chunk.js"
+    "static/js/main.ab6cb459.chunk.js"
   ]
 }
