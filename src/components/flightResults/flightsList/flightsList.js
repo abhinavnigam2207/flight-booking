@@ -26,8 +26,14 @@ const noFlightsMsg = css`
   font-size: 1em;
   font-family: cursive;
 `;
-const head = css`font-weight: 600;`;
-const subHead = css`color: darkgray;`;
+const head = css`
+  font-weight: 600;
+  font-size: 14px;
+`;
+const subHead = css`
+  color: darkgray;
+  font-size: 12px;
+`;
 const red = css`color: #e93535;`;
 const btn = css`
   background: #e93535 !important;
@@ -54,7 +60,7 @@ export default ({ returnFlight, filter, flights }) => {
     <div css={flex1}>
       <header css={headCSS}>
         {returnFlight ? (<strong>{`${to} to ${from}`}</strong> ): <strong>{`${from} to ${to}`}</strong>}
-        <div css={flightInfo}>{`${flights.length} flights found. ${moment(filter.departureDate).format('ddd, DD MMMM')}`}</div>
+        <div css={flightInfo}>{`${flights.length} flights found. ${moment(returnFlight ? filter.returnDate: filter.departureDate).format('ddd, DD MMMM')}`}</div>
       </header>
       <div>
         {flights.map((flight) => (
