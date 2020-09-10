@@ -30,7 +30,7 @@ const getRequiredFlights = (data, origin, destination, travelDate) => {
           departureTime: f1.departureTime,
           destination: f2.destination,
           flightNo: null,
-          duration: f1.duration + f2.duration,
+          duration: Math.round((f1.duration + f2.duration + end.diff(start, 'hours', true)) * 100) / 100,
           name: "Multiple",
           multiple: true,
           origin: f1.origin,
